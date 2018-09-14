@@ -1,0 +1,49 @@
+#ifndef DEFVARS_H_INCLUDED
+#define DEFVARS_H_INCLUDED
+
+#include "clientlist.h"
+
+pNODE list_client;
+
+#endif // DEFVARS_H_INCLUDED
+
+#define SOCKADDR_IN struct sockaddr_in
+
+#define COMMAND_BACK_SUCCESS    "COMMAND=BACK=SUCCESS"
+#define COMMAND_BACK_FAILED     "COMMAND=BACK=FAILED="
+#define COMMAND_LIST_BEGIN      "COMMAND=LIST=BEGIN=="
+#define COMMAND_LIST_END        "COMMAND=LIST=END===="
+#define COMMAND_LIST_DATA		"COMMAND=LIST=DATA==="
+#define COMMAND_LIST_EMPTY		"COMMAND=LIST=EMPTY=="
+#define COMMAND_KICK_NOTFOUND   "COMMAND=KCIK=NOFOUND"
+#define COMMAND_SEND_NOTFOUND   "COMMAND=SEND=NOFOUND"
+#define COMMAND_SERVER_BUSY		"COMMAND=SERVER=BUSY="
+
+#define COMMAND_LOGIN           "COMMAND=REGISTER=ME="
+#define COMMAND_REPEAT_ID		"COMMAND=REPEAT=ID==="
+#define COMMAND_LOGOUT          "COMMAND=DELETE=ME==="
+#define COMMAND_CONFIRM_TYPE    "COMMAND=COMFIRM=TYPE"
+#define COMMAND_READY           "COMMAND=BEGIN=ACTION"
+#define COMMAND_RETURN_TYPE     "COMMAND=RETURN=TYPE="
+#define COMMAND_HELPSEND_TO     "COMMAND=HELPSEND=TO="
+#define COMMAND_GET_CLIENTS     "COMMAND=GET=ONLINES="
+#define COMMAND_TRANSLATE       "COMMAND=TRANSLATE==="
+
+#define HD_LOGIN_ERROR			1000
+#define HD_LOGIN_SUCCESS		1001
+
+#define PORT_CMD 	9880
+#define PORT_SER 	9881
+#define PORT_NAT 	9882
+#define PORT_LST	9883
+#define PORT_CNT	9884
+
+#define MAXDATA 	1024
+#define MAXCMD 		128
+
+#define NATTYPE_NOATNAT	0		//不处于NAT之后
+#define NATTYPE_FULLCONE 1		//任何请求都能通过的该ip和端口传送
+#define NATTYPE_RESTCONE 2		//只有端口向某个主机发送过信息,才能接收该主机的消息
+#define NATTYPE_PORTCONE 3		//只有端口向某个主机的某个端口发送过信息,才能接收该主机从该端口发送过来的信息
+#define NATTYPE_SYMMETRIC 4 	//只有和相同外部IP和相同外部端口的主机通信才能够映射出相同的NAT转换
+

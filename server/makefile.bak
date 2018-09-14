@@ -1,0 +1,28 @@
+
+ROOTDIR := $(shell pwd)
+
+OBJFILES := $(ROOTDIR)/obj/main.o $(ROOTDIR)/obj/threadporc.o $(ROOTDIR)/obj/stringfuncs.o $(ROOTDIR)/obj/clientlist.o
+
+server : main.o threadporc.o stringfuncs.o clientlist.o
+	@if [ ! -d $(ROOTDIR)/bin ]; then mkdir $(ROOTDIR)/bin; fi;
+	@gcc -o $(ROOTDIR)/bin/server $(ROOTDIR)/obj/*.o -lpthread
+
+main.o : main.c main.h threadporc.h
+	@if [ ! -d $(ROOTDIR)/obj ]; then mkdir $(ROOTDIR)/obj; fi;
+	@gcc -c main.c -o $(ROOTDIR)/obj/main.o 
+
+clientlist.o : clientlist.c clientlist.h
+	@if [ ! -d $(ROOTDIR)/obj ]; then mkdir $(ROOTDIR)/obj; fi;
+	@gcc -c clientlist.c -o $(ROOTDIR)/obj/clientlist.o
+
+threadporc.o : threadporc.c threadporc.h defvars.h stringfuncs.h clientlist.h
+	@if [ ! -d $(ROOTDIR)/obj ]; then mkdir $(ROOTDIR)/obj; fi;
+	@gcc -c threadporc.c -o $(ROOTDIR)/obj/threadporc.o
+
+stringfuncs.o : stringfuncs.c stringfuncs.h defvars.h
+	@if [ ! -d $(ROOTDIR)/obj ]; then mkdir $(ROOTDIR)/obj; fi;
+	@gcc -c stringfuncs.c -o $(ROOTDIR)/obj/stringfuncs.o
+
+clean :
+	rm $(ROOTDIR)/bin/*
+	rm $(ROOTDIR)/obj/*
