@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1536469808 source:/home/alvis/workspace/codeblocks/c/MYTQ-ctrl/main.c
+	"main.h"
+	"defvars.h"
+
+1536465637 /home/alvis/workspace/codeblocks/c/MYTQ-ctrl/main.h
+	<stdio.h>
+	<stdlib.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<sys/errno.h>
+	<sys/time.h>
+	<string.h>
+
+1535123229 /home/alvis/workspace/codeblocks/c/MYTQ-ctrl/cmdstringlist.h
+
+1536467241 /home/alvis/workspace/codeblocks/c/MYTQ-ctrl/defvars.h
+
