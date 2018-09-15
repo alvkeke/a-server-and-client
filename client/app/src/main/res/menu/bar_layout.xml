@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/menu"
+    android:title="刷新列表"
+    />
+    <item
+        android:id="@+id/logout"
+        android:title="注销账号"/>
+</menu>

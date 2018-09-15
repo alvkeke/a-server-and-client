@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chatting_layout"
+    android:orientation="vertical">
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/chatting_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_weight="5"
+            android:id="@+id/input_edit_message_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/send_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="发送" />
+    </LinearLayout>
+</LinearLayout>

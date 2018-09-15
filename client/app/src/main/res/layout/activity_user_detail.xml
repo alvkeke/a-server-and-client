@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetail"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="id"
+        android:textAllCaps="false"
+        android:id="@+id/user_id"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="ip"
+        android:textAllCaps="false"
+        android:id="@+id/ip"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="nat"
+        android:textAllCaps="false"
+        android:id="@+id/nat"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="port"
+        android:textAllCaps="false"
+        android:id="@+id/port"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

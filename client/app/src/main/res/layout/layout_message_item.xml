@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/user" />
+
+    <TextView
+        android:maxLength="18"
+        android:layout_marginTop="5dp"
+        android:id="@+id/msg_item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:text="Sample"
+        android:textSize="20sp" />
+
+    <TextView
+        android:maxLength="18"
+        android:id="@+id/msg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/msg_item_id"
+        android:layout_marginTop="35dp"
+        android:text="Sample"
+        android:textSize="15sp" />
+</RelativeLayout>

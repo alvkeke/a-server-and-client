@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_layout"
+    android:orientation="vertical"
+    android:background="@mipmap/background_bear">
+    <EditText
+        android:textAllCaps="false"
+        android:text="DefaultUser"
+        android:id="@+id/user_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Nickname" />
+
+    <EditText
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ip_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP"
+        android:text="39.108.118.33"
+        android:textAllCaps="false" />
+
+    <Button
+        android:background="#55f18842"
+        android:id="@+id/login_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="登陆" />
+</LinearLayout>
